@@ -1,0 +1,69 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster|Rokkitt)
+
+$dark-cream: #FDE7CE
+$medium-cream: #FDE7CE
+$light-cream: #FDEDDB
+$brown: #A3733D
+$gray: #BCAC99
+$dark-blue: #275467
+$light-blue: #AAC4CF
+
+body
+  background: $light-cream
+
+#line-fetcher
+  width: 50%
+  margin: 50px auto
+  text-align: center
+
+h1
+  font-family: "Lobster", cursive
+  font-size: 64px
+  color: $dark-blue
+
+#line-number
+  display: block
+  width: 25%
+  min-width: 100px
+  margin: auto
+  margin-bottom: 30px
+  border: none
+  border-bottom: 1px solid $dark-blue
+  background: transparent
+  color: $dark-blue
+  font-size: 30px
+  font-family: "Rokkitt", serif
+  text-align: center
+
+button
+  $height: 40px
+  width: 15%
+  height: $height
+  min-width: 100px
+  border: 1px solid darken($brown, 10%)
+  border-radius: 3px
+  margin-bottom: 50px
+  background: $brown
+  color: $light-cream
+  line-height: $height
+  font-family: "Lobster"
+  font-size: 18px
+
+  &:hover
+    cursor: pointer
+
+#line-number, button
+  &:focus
+    outline: 0
+
+#line
+  width: 75%
+  min-width: 200px
+  margin: auto
+  padding: 10px
+  border: 1px solid darken($light-blue, 10%)
+  border-radius: 3px
+  background: $light-blue
+  color: $dark-blue
+  font-family: "Rokkitt", sans-serif
+  font-size: 24px

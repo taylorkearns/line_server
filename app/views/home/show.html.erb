@@ -1,0 +1,13 @@
+<div id="line-fetcher" ng-app="LineFetcher">
+  <div ng-controller="LineFetcherController">
+
+    <h1>Pick a Line</h1>
+
+    <input id="line-number" type="text" ng-model="lineNumber"</input>
+
+    <button ng-click="fetchLine()">Get Line</button>
+
+    <div ng-if="line" id="line">{{ line }}</div>
+
+  </div>
+</div>
